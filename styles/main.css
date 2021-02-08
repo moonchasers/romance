@@ -21,9 +21,97 @@ body {
 	top: 50%;
 }
 
-#wrapper {
-	width: 710px;
-	margin: 0 auto;
+.wrapper {
+  margin-right: auto; 
+  margin-left:  auto; 
+  max-width: 960px; 
+  padding-right: 10px; 
+  padding-left:  10px; 
+}
+
+p {
+  font-size: medium;
+  line-height: normal;
+}
+
+h1 {
+  font-size: large;
+  line-height: normal;
+}
+
+h2 {
+  font-size: x-large;
+  line-height: normal;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #d1d1d1;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #C3CCE3;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 header, article {
@@ -36,7 +124,7 @@ header {
 }
 
 header h1 {
-	font-size: 60px;
+	font-size: 30px;
 	line-height: 60px;
 	display: none;
 }
@@ -45,6 +133,10 @@ header h1 {
 	font-size: 48px;
 	line-height: 48px;
 	margin: 60px 0;
+	text-align: center;
+	padding-right:	10px;
+	padding-left:	10px;
+	max-width: 960px; 
 }
 
 #output.animate {
@@ -57,7 +149,7 @@ header h1 {
 
 noscript {
 	font-weight: 800;
-	font-size: 48px;
+	font-size: 30px;
 	line-height: 48px;
 	margin: 60px 0;
 }
@@ -68,39 +160,15 @@ noscript {
 }
 
 #generate {
+	
 	text-decoration: none;
 	font-size: 20px;
-	color: #000;
+	color: #4276B2;
 }
 
 #generate:hover {
 	text-decoration: underline;
 	color: black;
-}
-
-aside {
-	position: absolute;
-	margin: 12px 8px;
-	right: 0;
-	top: 0;
-}
-
-#share li {
-	list-style: none;
-	display: inline;
-}
-
-#share-facebook {position: relative; top: 0px;}
-.fb-share-button {
-	font-size: 11px;	
-	color: #000;
-	vertical-align: middle;
-}
-#share-twitter {position: relative; top: 0px;}
-.twitter-share-button {
-	font-size: 11px;	
-	color: #000;
-	vertical-align: middle;
 }
 
 footer {
